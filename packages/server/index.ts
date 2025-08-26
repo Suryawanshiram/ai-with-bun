@@ -11,6 +11,10 @@ app.get("/", (req: Request, res: Response) => {
   res.send("hey Dev");
 });
 
+app.get("/api/hello", (req: Request, res: Response) => {
+  res.send("APi Created....");
+});
+
 app.listen(port, () => {
   console.log(`Server is running on http://localhost: ${port}`);
 });
